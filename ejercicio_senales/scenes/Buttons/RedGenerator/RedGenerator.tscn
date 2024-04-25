@@ -6,3 +6,5 @@
 [node name="RedGenerator" type="TextureButton"]
 texture_normal = ExtResource("1")
 script = ExtResource("2_s1f1y")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
