@@ -16,4 +16,8 @@ func count_new_instance():
 	instancesCount += 1
 	$CountLabel.text = INSTANCES_TEXT + str(instancesCount)
 	pass
-# error at 10, 40): invalid argument for "connect()" function: argument 2 should be "Callable" but is ""
+
+func delete():
+	instancesCount = 0
+	$CountLabel.text = INSTANCES_TEXT + str(instancesCount)
+	pass
