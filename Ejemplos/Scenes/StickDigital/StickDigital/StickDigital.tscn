@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/StickDigital/StickDigital/StickDigital.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/StickDigital/StickDigital/boton.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/StickDigital/StickDigital/boton.png" type="Texture2D" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 52.2093
@@ -12,9 +12,9 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="CenterPosition" type="Position2D" parent="."]
+[node name="CenterPosition" type="Marker2D" parent="."]
 
-[node name="ButtonImage" type="Sprite" parent="."]
+[node name="ButtonImage" type="Sprite2D" parent="."]
 texture = ExtResource( 2 )
 
 [node name="TouchArea" type="Area2D" parent="."]

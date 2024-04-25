@@ -9,8 +9,8 @@ extends Node2D
 # Que el portal sea visible, total los eventos de entrada y salida ya son
 # Campurados
 
-export (String, "Left", "Right", "Up", "Down") var firstPortalAppearDirection = "Right"
-export (String, "Left", "Right", "Up", "Down") var secondPortalAppearDirection = "Left"
+@export (String, "Left", "Right", "Up", "Down") var firstPortalAppearDirection = "Right"
+@export (String, "Left", "Right", "Up", "Down") var secondPortalAppearDirection = "Left"
 
 var firstPortalDirection
 var secondPortalDirection

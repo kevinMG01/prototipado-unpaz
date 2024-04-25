@@ -11,7 +11,7 @@ func _on_AreaNoDetect_area_entered(area):
 	pass
 
 func generate_bullet(pos):
-	var bulletInstance = bullet.instance()
+	var bulletInstance = bullet.instantiate()
 	bulletInstance.position = pos
 	add_child(bulletInstance)
 	pass

@@ -11,7 +11,7 @@ func _process(_delta):
 		else:
 			# clamp devuelve el mismo vector pero reducido para que su
 			# distancia sea de max_button_ration_length o menos
-			var new_position = get_local_mouse_position().clamped(max_button_ration_length)
+			var new_position = get_local_mouse_position().limit_length(max_button_ration_length)
 			$ButtonImage.position = new_position
 			# Emite una señal enviando la nueva posición ( clampeada ) para ser utilizada luego por el personaje
 			emit_signal("stick_motion", new_position)

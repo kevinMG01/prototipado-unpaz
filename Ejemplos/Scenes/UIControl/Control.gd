@@ -1,12 +1,12 @@
 extends Control
 
 
-onready var powerUps = $Panel/CenterContainer/PowerUps
+@onready var powerUps = $Panel/CenterContainer/PowerUps
 
 var powerUpScene = preload("res://Scenes/UIControl/PowerUp.tscn")
 
 func _on_Button_button_down():
-	var powerUp = powerUpScene.instance()
+	var powerUp = powerUpScene.instantiate()
 	$Panel/CenterContainer/PowerUps.add_child(powerUp)
 	pass
 

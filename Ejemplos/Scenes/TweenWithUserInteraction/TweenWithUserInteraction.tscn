@@ -13,43 +13,43 @@ visible = false
 instructions = "en este ejemplo utilizamos el nodo Tween para darle fluidez al movimiento del personaje al recibir una interacción de un usuario"
 
 [node name="Referencia1" type="ColorRect" parent="."]
-margin_left = 300.0
-margin_top = 550.0
-margin_right = 310.0
-margin_bottom = 590.0
-rect_pivot_offset = Vector2( 5, 0 )
+offset_left = 300.0
+offset_top = 550.0
+offset_right = 310.0
+offset_bottom = 590.0
+pivot_offset = Vector2( 5, 0 )
 color = Color( 0.0235294, 0.494118, 0.529412, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Referencia2" type="ColorRect" parent="."]
-margin_left = 500.0
-margin_top = 550.0
-margin_right = 510.0
-margin_bottom = 590.0
-rect_pivot_offset = Vector2( 5, 0 )
+offset_left = 500.0
+offset_top = 550.0
+offset_right = 510.0
+offset_bottom = 590.0
+pivot_offset = Vector2( 5, 0 )
 color = Color( 0.0235294, 0.494118, 0.529412, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Referencia3" type="ColorRect" parent="."]
-margin_left = 700.0
-margin_top = 550.0
-margin_right = 710.0
-margin_bottom = 590.0
-rect_pivot_offset = Vector2( 5, 0 )
+offset_left = 700.0
+offset_top = 550.0
+offset_right = 710.0
+offset_bottom = 590.0
+pivot_offset = Vector2( 5, 0 )
 color = Color( 0.0235294, 0.494118, 0.529412, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="."]
-margin_left = 275.063
-margin_top = 584.825
-margin_right = 745.063
-margin_bottom = 598.825
+offset_left = 275.063
+offset_top = 584.825
+offset_right = 745.063
+offset_bottom = 598.825
 text = "LAS MARCAS SON SOLO DE REFERENCIA VISUAL Y ESTÁN HARDCODEADAS"
 __meta__ = {
 "_edit_use_anchors_": false

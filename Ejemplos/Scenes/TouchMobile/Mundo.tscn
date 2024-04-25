@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/TouchMobile/Mundo.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://icon.png" type="Texture2D" id=2]
 [ext_resource path="res://Scenes/TouchMobile/AreaDerecha.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -19,19 +19,19 @@ shape = SubResource( 1 )
 [node name="AreaDerecha" parent="." instance=ExtResource( 3 )]
 position = Vector2( 780.043, 473.874 )
 
-[node name="icon" type="Sprite" parent="." groups=[
+[node name="icon" type="Sprite2D" parent="." groups=[
 "sprites",
 ]]
 position = Vector2( 185.725, 152.762 )
 texture = ExtResource( 2 )
 
-[node name="icon2" type="Sprite" parent="." groups=[
+[node name="icon2" type="Sprite2D" parent="." groups=[
 "sprites",
 ]]
 position = Vector2( 477.274, 160.502 )
 texture = ExtResource( 2 )
 
-[node name="icon3" type="Sprite" parent="." groups=[
+[node name="icon3" type="Sprite2D" parent="." groups=[
 "sprites",
 ]]
 position = Vector2( 798.924, 167.383 )

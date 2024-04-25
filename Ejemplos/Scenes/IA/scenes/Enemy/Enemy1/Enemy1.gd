@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 var isMoving = false
 var direction = Vector2.RIGHT

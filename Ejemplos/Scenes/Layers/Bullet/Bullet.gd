@@ -1,9 +1,10 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 const velocity = Vector2(-400, 0)
 
 func _physics_process(delta):
-	move_and_slide(velocity)
+	set_velocity(velocity)
+	move_and_slide()
 	pass
 
 

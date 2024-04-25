@@ -12,7 +12,7 @@ config_version=5
 
 config/name="ejercicio_senales"
 run/main_scene="res://scenes/Menu/Menu.tscn"
-config/features=PackedStringArray("4.0")
+config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
 
 [rendering]

@@ -1,7 +1,7 @@
 extends Button
 
 # Variable importada desde el inspector
-export(String, FILE, "*.tscn") var scene
+@export var scene # (String, FILE, "*.tscn")
 
 func _on_MenuButton_button_down():
 	if scene != null:

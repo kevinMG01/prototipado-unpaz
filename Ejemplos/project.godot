@@ -6,16 +6,13 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[  ]
-_global_script_class_icons={
-}
+config_version=5
 
 [application]
 
 config/name="Ejemplos"
 run/main_scene="res://Scenes/Base.tscn"
+config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
 
 [autoload]
@@ -24,17 +21,16 @@ GlobalUserInfo="*res://Scenes/Autoload/Scripts/GlobalUserInfo.gd"
 
 [display]
 
-window/size/test_width=1024
-window/size/test_height=600
+window/size/window_width_override=1024
+window/size/window_height_override=600
 window/stretch/mode="2d"
-window/stretch/aspect="keep"
 
 [input]
 
 touch={
 "deadzone": 0.5,
-"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
- ]
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
 }
 
 [layer_names]
@@ -46,7 +42,6 @@ touch={
 
 [rendering]
 
+environment/defaults/default_environment="res://default_env.tres"
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
-vram_compression/import_etc2=false
-environment/default_environment="res://default_env.tres"

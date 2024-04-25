@@ -1,9 +1,9 @@
 [gd_scene format=2]
 
 [node name="PowerUp" type="ColorRect"]
-margin_right = 40.0
-margin_bottom = 40.0
-rect_min_size = Vector2( 40, 40 )
+offset_right = 40.0
+offset_bottom = 40.0
+custom_minimum_size = Vector2( 40, 40 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
 color = Color( 0.968627, 0.423529, 0.423529, 0.8 )

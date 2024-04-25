@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 const SPEED = 100
 var isMoving = false
@@ -9,7 +9,7 @@ func _ready():
 
 func _physics_process(delta):
 	if not isMoving:
-		var randDirectionNumber = floor(rand_range(0, 4))
+		var randDirectionNumber = floor(randf_range(0, 4))
 		if randDirectionNumber == 0:
 			direction = Vector2.LEFT
 		if randDirectionNumber == 1:
@@ -25,7 +25,8 @@ func _physics_process(delta):
 
 
 func move():
-	move_and_slide(direction * SPEED)
+	set_velocity(direction * SPEED)
+	move_and_slide()
 
 
 func _on_Timer_timeout():

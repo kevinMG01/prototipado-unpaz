@@ -15,5 +15,5 @@ func _on_UpLives_button_down():
 	pass
 
 func _on_Button_button_down():
-	get_tree().change_scene("res://Scenes/Autoload/Pantalla2.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Autoload/Pantalla2.tscn")
 	pass

@@ -1,9 +1,9 @@
 extends Control
-onready var powerUps = $VBoxContainer/PowerUps
+@onready var powerUps = $VBoxContainer/PowerUps
 var powerUpScenes = preload("res://Scenes/UIControl/PowerUp.tscn")
 
 func _on_Button_button_down():
-	var powerUp = powerUpScenes.instance()
+	var powerUp = powerUpScenes.instantiate()
 	$VBoxContainer/PowerUps.add_child(powerUp)
 	pass
 

@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 var velocity = Vector2(20, 0)
 
@@ -10,7 +10,8 @@ func _physics_process(delta):
 		velocity.y = 0
 	if Input.is_action_just_pressed("ui_up"):
 		velocity.y -= 400
-	move_and_slide(velocity)
+	set_velocity(velocity)
+	move_and_slide()
 	pass
 
 func _process(delta):

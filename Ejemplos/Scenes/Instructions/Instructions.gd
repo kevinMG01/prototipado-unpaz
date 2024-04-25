@@ -1,6 +1,6 @@
 extends Panel
 
-export (String) var instructions = ""
+@export (String) var instructions = ""
 
 func _ready():
 	visible = true

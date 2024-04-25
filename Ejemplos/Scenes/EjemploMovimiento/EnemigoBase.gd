@@ -1,11 +1,11 @@
 extends Node2D
 
-export (Vector2) var posicion1
-export (Vector2) var posicion2
-export (Vector2) var posicion3
-export (Vector2) var posicion4
+@export (Vector2) var posicion1
+@export (Vector2) var posicion2
+@export (Vector2) var posicion3
+@export (Vector2) var posicion4
 
-export (int) var velocidad
+@export (int) var velocidad
 
 var posicionDestino
 

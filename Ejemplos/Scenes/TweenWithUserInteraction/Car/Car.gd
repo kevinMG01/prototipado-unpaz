@@ -3,7 +3,7 @@ extends Node2D
 ## Variable exportada que usaremos como referencia para saber cuando debe desplarse 
 ## el auto para llegar de un carril a otro. Los valores se pueden editar en el inspector de
 ## Propiedades de la instancia
-export var distanceBetweenPositions = 200
+@export var distanceBetweenPositions = 200
 
 ## Defino el máximo y mínimo de posiciones
 # Esto sería mas simple usando otro tipo de estructuras de datos

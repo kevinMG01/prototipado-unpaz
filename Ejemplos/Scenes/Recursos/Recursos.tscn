@@ -1,20 +1,20 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Scenes/Recursos/Assets/font_ubuntu_big.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scenes/Recursos/Assets/font_ubuntu_big.tres" type="FontFile" id=1]
 
 [node name="Recursos" type="Node2D"]
 
 [node name="Label1" type="Label" parent="."]
-margin_left = 0.908203
-margin_top = 1.81641
-margin_right = 386.908
-margin_bottom = 96.8164
-custom_fonts/font = ExtResource( 1 )
-custom_colors/font_color = Color( 0.823529, 0.00784314, 0.00784314, 1 )
-custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = 10
-custom_constants/shadow_offset_y = 10
+offset_left = 0.908203
+offset_top = 1.81641
+offset_right = 386.908
+offset_bottom = 96.8164
+theme_override_fonts/font = ExtResource( 1 )
+theme_override_colors/font_color = Color( 0.823529, 0.00784314, 0.00784314, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_shadow_color = Color( 0, 0, 0, 1 )
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
 text = "ESTE ES EL TEXTO 1
 "
 __meta__ = {
@@ -22,11 +22,11 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 9.99037
-margin_top = 108.076
-margin_right = 611.99
-margin_bottom = 159.076
-custom_fonts/font = ExtResource( 1 )
+offset_left = 9.99037
+offset_top = 108.076
+offset_right = 611.99
+offset_bottom = 159.076
+theme_override_fonts/font = ExtResource( 1 )
 text = "ESTE ES EL TEXTO 2"
 __meta__ = {
 "_edit_use_anchors_": false

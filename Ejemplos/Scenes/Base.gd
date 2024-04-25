@@ -13,7 +13,7 @@ func load_scene(scene: String):
 	# Quita el menu y agrega la escena elegida
 	remove_child(menuInstance)
 	menuInstance = null
-	sceneInstance = load(scene).instance()
+	sceneInstance = load(scene).instantiate()
 	add_child(sceneInstance)
 	$Back.visible = true
 	pass
@@ -26,6 +26,6 @@ func _on_Back_button_down():
 	pass
 
 func instance_menu():
-	menuInstance = menuScene.instance()
+	menuInstance = menuScene.instantiate()
 	add_child(menuInstance)
 	pass
